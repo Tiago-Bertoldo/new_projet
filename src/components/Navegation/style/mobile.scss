@@ -1,0 +1,16 @@
+@media screen and (max-width: 600px) {
+    .navegation-container-section{
+
+        &__logo {
+            width: 100% !important;
+            justify-content: center;
+        }
+        &__menu-resposive {
+
+            display: flex !important;
+        }
+        &__navegation , &__social {
+            display: none !important;
+        }
+    }
+}
