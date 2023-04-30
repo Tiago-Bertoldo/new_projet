@@ -1,0 +1,7 @@
+@mixin effect-responsive-menu($name){
+    @keyframes #{$name} {
+        0% {
+            transform: translateY(900px);
+        }
+    }
+}

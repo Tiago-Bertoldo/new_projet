@@ -21,14 +21,14 @@ export default function BannerGap() {
     setTimeout(() => {
       changeClass.remove("effect-change-first-page");
       getPrincipalSelector.classList.remove("effect-change-toggle");
-    }, 1200);
+    }, 1000);
   };
 
   const handleClearEffectBtn = (btn, getPrincipalSelector) => {
     setTimeout(() => {
       btn.classList.remove("effect-change-first-page");
       getPrincipalSelector.classList.remove("effect-change-toggle");
-    }, 1200);
+    }, 1000);
   };
 
   const handleChangeClass = (getPrincipalSelector, changeClass) => {
