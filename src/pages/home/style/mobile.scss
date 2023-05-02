@@ -1,0 +1,41 @@
+@media screen and (max-width:640px) {
+    .home-page-container__section--img {
+        display: none !important;
+    }
+    .home-page-container__section {
+        &--text {
+			width: 60% !important;
+        }
+        p:nth-child(1) {
+            font-size: calc(11px + 0.5vw) !important;
+            line-height: calc(10px + 1.2vw) !important;
+        }
+        p:nth-child(2) {
+
+            font-size: calc(16px + 0.5vw) !important;
+            line-height: calc(22px + 2.2vw) !important;
+        }
+        p:nth-child(3) {
+            font-size: calc(11px + 0.2vw) !important;
+            line-height: calc(10px + 0vw) !important;
+
+        }
+
+    }
+    @keyframes typewriter {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 12% !important;
+        }
+    }
+    @keyframes blink {
+        from {
+            border-color: black;
+        }
+        to {
+            border-color: transparent;
+        }
+    }
+}

@@ -1,13 +1,10 @@
 @import '../../../Styles/variables';
 
 @media screen and (max-width: 860px) {
-    *{
-        overflow: hidden;
-    }
-
+    
     .navegation-container-section{
         &__logo {
-            width: 100% !important;
+            width: 80% !important;
             justify-content: center;
         }
         &__menu-resposive {
@@ -15,15 +12,18 @@
         }
 
         &__navegation {
-            top: 79px;
+            top: 78px;
             left: 0;
             position: absolute;
-            width: 100% !important;
+            z-index: 10000000 !important;
             background-color: $primaryColor;
             transform: translateY(-600px);
+            width: 100% !important;
+ 
             ul {
                 width: 100%;
                 flex-direction: column;
+                margin-bottom: 1em;
                 span {
                     display: flex;
                     width: 100%;
@@ -34,7 +34,6 @@
                     &:hover {
                         span {
                             color: black !important;
-
                         }
                         background-color: $secondaryHover;
                     }
@@ -53,7 +52,6 @@
         transition: .3s all ease-in-out;
         transform: translateY(0px);
         opacity: 1;
-        z-index: 10000000000;
     }
 
     .toggle .line1 {

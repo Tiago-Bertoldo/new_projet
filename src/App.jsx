@@ -4,6 +4,7 @@ import './value.css'
 function App() {
   return (
     <div className="principal-container">
+
             <BannerGap/>
             <Footer/>
     </div>

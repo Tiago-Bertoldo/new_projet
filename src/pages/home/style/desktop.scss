@@ -1,0 +1,131 @@
+.home-page-container {
+	width: 100%;
+	max-width: 1000px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 1em;
+	.home-box {
+		width: 100%;
+		border: 1px solid black;
+		height: 300px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 100000000;
+		&::before {
+			content: "";
+			position: absolute;
+			background-color: white;
+			top: -20px;
+			left: 80px;
+			right: -10px;
+			bottom: 0;
+			height: 90%;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			background-color: white;
+			top: 60px;
+			left: -10px;
+			right: 80px;
+			bottom: 0;
+			height: 90%;
+		}
+	}
+	.home-page-container__section {
+		position: absolute;
+		width: 100%;
+		max-width: 800px;
+		z-index: 100000000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&--text {
+			width: 70%;
+			max-width: 1200px;
+			min-width: 310px;
+			align-items: flex-start;
+			p:nth-child(1) {
+				width: 86px;
+				font-family: "Inter", sans-serif;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 20px;
+				line-height: calc(10px + 1.2vw);
+				color: #000000;
+				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			}
+			p:nth-child(2) {
+				font-family: "Inter", sans-serif;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 27px;
+				line-height: 46px;
+				color: #000000;
+				animation: opacityFrame 2s ease-in-out;
+				animation-delay: 1s;
+                animation-fill-mode: forwards;
+				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				opacity: 0;
+			}
+			p:nth-child(3) {
+				font-family: "Work Sans" sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: calc(10px + 1vw);
+				animation: opacityFrame 2s ease-in-out;
+                animation-fill-mode: forwards;
+				animation-delay: 2s;
+				opacity: 0;
+				color: #525050;
+			}
+		}
+		&--img {
+			width: 20%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				width: calc(100% - 20%);
+			}
+		}
+	}
+	.machine-write {
+		width: 15%;
+		white-space: nowrap;
+		overflow: hidden;
+		animation: typewriter 1s steps(13),
+			blink 800ms steps(13) infinite normal;
+		border-right: 1px solid black;
+	}
+}
+
+@keyframes typewriter {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 16%;
+	}
+}
+@keyframes blink {
+	from {
+		border-color: black;
+	}
+	to {
+		border-color: transparent;
+	}
+}
+
+@keyframes opacityFrame {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

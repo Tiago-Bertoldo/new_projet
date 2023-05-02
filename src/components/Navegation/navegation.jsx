@@ -11,6 +11,7 @@ export default function Navegation() {
 	};
 
 	const handleEffectHidden = e => {
+
 		let getNavegationMenu = document.querySelector(
 			".navegation-container-section__navegation"
 		);
@@ -44,7 +45,6 @@ export default function Navegation() {
 					</div>
 					<div className="navegation-container-section__logo">
 						<a href="/">
-							{" "}
 							TIAGO <span>BERTOLDO</span>
 						</a>
 					</div>
@@ -78,7 +78,7 @@ export default function Navegation() {
 						<ul>
 							<li>
 								<a
-									href="http://"
+									href="https://github.com/tiago-bertoldo"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -87,7 +87,7 @@ export default function Navegation() {
 							</li>
 							<li>
 								<a
-									href="http://"
+									href="https://www.linkedin.com/in/tiago-bertoldo"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
